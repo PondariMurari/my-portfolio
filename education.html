@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: rgba(135, 207, 235, 0.82);
+}
+.journey{
+  text-align: center;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: white}
+
+@media screen and (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  tr { border: 4pxpx solid blue; }
+  
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+  
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    content: attr(data-column);
+    
+    color: #000;
+    font-weight: bold;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1 class="journey">My Journey</h1>
+
+<table>
+<thead>
+<tr>
+<th><h1>Education</h1></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-column="Column1">
+    <h2>Sagi Ramakrishnam Raju Engineering College</h2>
+    <p>I completed my graduation from SRKR Engineering College. During my time there, I learned coding and enhanced my interpersonal skills<br>
+        My coursework and projects provided me with a strong foundation in C-language,java,Python.
+
+
+</td>
+<td data-column="Column2"><h2>2019-2022</h2></td>
+</tr>
+<tr>
+<td data-column="Column1">
+    <h2>Government Polytechnic College Srikakulam</h2>
+    <p> I completed my diploma in Electrical and Electronics Engineering from Government Polytechnic College.
+        <br> During my time there, I improved my communication and technical skills.
+        <br>My coursework provided me with a strong foundation in motor installation and overhauling</p>
+
+    </td>
+<td data-column="Column2"><h2>2016-2019</h2></td>
+</tr>
+<tr>
+<td data-column="Column1">
+    <h2>Geethanjali School</h2>
+    <p>This is the place where I came to know about the world</p>
+<td data-column="Column2"><h2>2015-2016</h2></td>
+</tr>
+</tbody>
+</table>
+
+<script>
+
+// Add your JavaScript code here
+
+</script>
+
+</body>
+</html> 
