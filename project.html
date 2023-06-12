@@ -4,28 +4,45 @@
     <title>Projects</title>
 </head>
 <body>
-    <div class="container">
-        <h1>My Projects</h1>
-        <div class="projects">
-            <div class="project">
-                <img class="project-image" src="car-show room analysis.jpg" alt="Project 1">
-                <div class="project-title">Car-showroom Analysis</div>
-                <div class="project-description">I load the data into a pandas DataFrame and
-                     use its methods to clean and rearrange the data.I delete unnecessary 
-                     columns and combine the required data. I use pandas’ analysis and visualization tools to generate insights 
-                     and present them in a concise manner.</div>
+    <!-- Add this link to the head of your HTML file to include Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<div class="container">
+    <h1>My Projects</h1>
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+                <img class="card-img-top" src="car-show room analysis.jpg" alt="Project 1">
+                <div class="card-body">
+                    <h5 class="card-title">Car-showroom Analysis</h5>
+                    <p class="card-text">I load the data into a pandas DataFrame and use its methods to clean and rearrange the data. I delete unnecessary columns and combine the required data. I use pandas’ analysis and visualization tools to generate insights and present them in a concise manner.</p>
+                </div>
             </div>
-            <div class="project">
-                <img class="project-image" src="solar tracker.jpg" alt="Project 2">
-                <div class="project-title">Automatic Solar Tracker</div>
-                <div class="project-description">solar Panel changes its direction according to the direction of the sun.I use LDR and aurdino to control the direction.</div>
-            </div>
-            <div class="project">
-                <img class="project-image" src="website.jpg" alt="Project 3">
-                <div class="project-title">SkinCare-Website</div>
-                <div class="project-description">It is a basic skin care e-commerce website.we designed the website which provides user friendly shopping experience.we use html,css,bootstrap,JavaScript to design the webpage.</div>
         </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+                <img class="card-img-top" src="solar tracker.jpg" alt="Project 2">
+                <div class="card-body">
+                    <h5 class="card-title">Automatic Solar Tracker</h5>
+                    <p class="card-text">Solar Panel changes its direction according to the direction of the sun. I use LDR and Arduino to control the direction.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+                <img class="card-img-top" src="website.jpg" alt="Project 3">
+                <div class="card-body">
+                    <h5 class="card-title">SkinCare-Website</h5>
+                    <p class="card-text">It is a basic skin care e-commerce website.we designed the website which provides user friendly shopping experience.we use html,css,bootstrap,JavaScript to design the webpage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 <style>
     .container {
         width: absolute;
